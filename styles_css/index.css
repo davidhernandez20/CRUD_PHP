@@ -1,0 +1,34 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 25%;
+}
+
+.input{
+    width: 100%;
+    text-align: left;
+    font-size: 1.3em;
+    border-radius:10px;
+    background-color:white;
+    border-color: transparent;
+    transition: 1s box-shadow;
+}
+
+.input:hover{
+    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+
+}
