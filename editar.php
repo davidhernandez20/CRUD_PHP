@@ -29,7 +29,7 @@ $row = mysqli_fetch_array($query);
                 <input type="text" name="password" placeholder="Contraseña" value="<?= $row ['password']?>">
                 <input type="text" name="email" placeholder="Correo" value="<?= $row ['email']?>">
 
-                <input type="submit" value="Actualizar Datos">
+                <input type="submit" value="Actualizar datos">
             </form>
         </div>
 </body>
