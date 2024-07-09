@@ -1,34 +1,79 @@
-body{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+/* Neomorphic styles for the form and table */
+
+body {
+    background-color: #e0e0e0;
+    font-family: Arial, sans-serif;
 }
 
-
-.formulario{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.formulario, .tabla_registro {
+    background: #e0e0e0;
+    border-radius: 20px;
+    box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
 }
 
-.form{
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.formulario .form {
     display: flex;
     flex-direction: column;
-    row-gap: 5px;
-    width: 25%;
+    gap: 15px;
 }
 
-.input{
+.input {
+    background: #e0e0e0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 10px #bebebe,
+                inset -5px -5px 10px #ffffff;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #bebebe,
+                -5px -5px 10px #ffffff;
+}
+
+.input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+table {
     width: 100%;
-    text-align: left;
-    font-size: 1.3em;
-    border-radius:10px;
-    background-color:white;
-    border-color: transparent;
-    transition: 1s box-shadow;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-.input:hover{
-    box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+th, td {
+    padding: 15px;
+    text-align: left;
+    background: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 10px #bebebe,
+                inset -5px -5px 10px #ffffff;
+}
 
+th {
+    background: #4CAF50;
+    color: white;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
